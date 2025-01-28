@@ -17,7 +17,9 @@ const variants = {
 }
 
 const DynamicButton: React.FC = () => {
-  const [buttonState, setButtonState] = React.useState("idle")
+  const [buttonState, setButtonState] = React.useState<
+    "loading" | "success" | "idle"
+  >("idle")
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
