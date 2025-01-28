@@ -1,6 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@config '../tailwind.config.ts';
 
 * {
   -webkit-font-smoothing: antialiased;
@@ -44,7 +44,7 @@ nav.css-tabs {
       }
 
       a {
-        @apply outline-none;
+        @apply outline-hidden;
       }
     }
   }

@@ -38,13 +38,13 @@ const UpvoteButton: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="grid h-64 w-44 scale-[2] place-content-center rounded-lg bg-white p-4 text-center text-sm transition-all ease-out md:h-64 md:w-96">
+      <div className="grid h-64 w-44 scale-2 place-content-center rounded-lg bg-white p-4 text-center text-sm transition-all ease-out md:h-64 md:w-96">
         <button
           onClick={() => {
             upvote()
           }}
           className={classNames(
-            "group flex cursor-pointer flex-col items-center justify-center gap-0.5 rounded-lg border size-12 p-6 px-3 py-1 text-center text-[#0D0D0D] focus:outline-none hover:border-[#6FCF97] hover:shadow-[0px_0px_0px_4px_#00AA4526]",
+            "group flex cursor-pointer flex-col items-center justify-center gap-0.5 rounded-lg border size-12 p-6 px-3 py-1 text-center text-[#0D0D0D] focus:outline-hidden hover:border-[#6FCF97] hover:shadow-[0px_0px_0px_4px_#00AA4526]",
             hasUpvoted ? "border-[#6FCF97]" : "border-gray-400"
           )}
         >

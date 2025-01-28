@@ -23,7 +23,7 @@ const ExitAnimation: React.FC = () => {
         </AnimatePresence>
       </div>
       <button
-        className="rounded bg-zinc-100 px-3 py-1.5 text-sm text-zinc-900"
+        className="rounded-sm bg-zinc-100 px-3 py-1.5 text-sm text-zinc-900"
         onClick={() => {
           setIsActive(!isActive)
         }}
