@@ -19,24 +19,24 @@ export const viewport: Viewport = {
 }
 
 const sansFont = Inter({
-  variable: "--font-sans",
+  variable: "--sans-font",
   subsets: ["latin"],
 })
 
 const serifFont = IBM_Plex_Serif({
-  variable: "--font-serif",
+  variable: "--serif-font",
   weight: ["400", "500"],
   subsets: ["latin"],
 })
 
 const monoFont = JetBrains_Mono({
-  variable: "--font-mono",
+  variable: "--mono-font",
   weight: ["400"],
   subsets: ["latin"],
 })
 
 const instrumentSerifFont = Instrument_Serif({
-  variable: "--font-instrument-serif",
+  variable: "--instrument-serif-font",
   weight: ["400"],
   subsets: ["latin"],
 })
@@ -47,7 +47,15 @@ interface Props {
 
 const RootLayout: React.FC<Props> = ({ children }) => {
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={classNames(
+        monoFont.variable,
+        sansFont.variable,
+        serifFont.variable,
+        instrumentSerifFont.variable
+      )}
+    >
       <head>
         <script
           defer
@@ -56,15 +64,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         ></script>
       </head>
 
-      <body
-        className={classNames(
-          monoFont.variable,
-          sansFont.variable,
-          serifFont.variable,
-          instrumentSerifFont.variable,
-          "overflow-x-hidden bg-zinc-900 font-sans"
-        )}
-      >
+      <body className="overflow-x-hidden bg-zinc-900 font-sans">
         {children}
         <div className="fixed bottom-4 flex w-full text-center font-serif text-sm text-zinc-400">
           <p className="mx-auto">

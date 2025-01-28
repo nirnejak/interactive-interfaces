@@ -1,9 +1,24 @@
 @import "tailwindcss";
 
-@config '../tailwind.config.ts';
-
 * {
   -webkit-font-smoothing: antialiased;
+}
+
+@theme {
+  --font-sans: var(--sans-font);
+  --font-serif: var(--serif-font);
+  --font-mono: var(--mono-font);
+  --font-instrument-serif: var(--instrument-serif-font);
+
+  @keyframes swing {
+    from {
+      transform: rotate(3deg);
+    }
+    to {
+      transform: rotate(-3deg);
+    }
+  }
+  --animate-swing: swing 1s infinite ease-in-out alternate;
 }
 
 /* Chrome, Safari, Edge, Opera */
