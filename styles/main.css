@@ -1,7 +1,18 @@
 @import "tailwindcss";
 
 * {
-  -webkit-font-smoothing: antialiased;
+  @apply antialiased;
+  text-rendering: geometricPrecision;
+}
+
+::-moz-selection {
+  @apply bg-zinc-600 text-white;
+  -webkit-text-fill-color: white;
+}
+
+::selection {
+  @apply bg-zinc-600 text-white;
+  -webkit-text-fill-color: white;
 }
 
 @theme {
