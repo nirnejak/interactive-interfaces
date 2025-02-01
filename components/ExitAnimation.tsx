@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion } from "motion/react"
 
 const ExitAnimation: React.FC = () => {
   const [isActive, setIsActive] = React.useState(false)

@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import { motion, AnimatePresence } from "framer-motion"
+import { motion, AnimatePresence } from "motion/react"
 import Image from "next/image"
 
 import PeerlistMelodyPopup from "assets/peerlist-melody-popup.png"

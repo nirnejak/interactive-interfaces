@@ -1,7 +1,7 @@
 "use client"
 import * as React from "react"
 
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion } from "motion/react"
 
 const AnimateHeight: React.FC = () => {
   const elementRef = React.useRef<HTMLDivElement>(null)

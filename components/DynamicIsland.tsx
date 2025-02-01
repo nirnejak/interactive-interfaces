@@ -2,7 +2,7 @@
 import * as React from "react"
 
 import { ArrowCounterClockwise, Bell, Cross, Pause, Play } from "akar-icons"
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 
 import Tabs from "./atoms/Tabs"
 import classNames from "utils/classNames"

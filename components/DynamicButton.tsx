@@ -2,7 +2,7 @@
 import * as React from "react"
 
 import { ArrowCycle } from "akar-icons"
-import { AnimatePresence, motion } from "framer-motion"
+import { AnimatePresence, motion } from "motion/react"
 
 const buttonCopy = {
   idle: "Submit Form",
