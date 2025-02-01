@@ -5,7 +5,7 @@ import { ArrowCounterClockwise, Bell, Cross, Pause, Play } from "akar-icons"
 import { motion } from "motion/react"
 
 import Tabs from "./atoms/Tabs"
-import classNames from "utils/classNames"
+import classNames from "@/utils/classNames"
 
 const initialSeconds = 30
 

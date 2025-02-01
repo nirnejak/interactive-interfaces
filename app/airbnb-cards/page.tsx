@@ -2,8 +2,8 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import AirbnbCards from "components/AirbnbCards"
-import generateMetadata from "utils/seo"
+import AirbnbCards from "@/components/AirbnbCards"
+import generateMetadata from "@/utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/airbnb-cards/",

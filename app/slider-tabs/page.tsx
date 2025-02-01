@@ -2,8 +2,8 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import SliderTabs from "components/SliderTabs"
-import generateMetadata from "utils/seo"
+import SliderTabs from "@/components/SliderTabs"
+import generateMetadata from "@/utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/slider-tabs/",

@@ -3,7 +3,7 @@ import * as React from "react"
 
 import { motion } from "motion/react"
 
-import classNames from "utils/classNames"
+import classNames from "@/utils/classNames"
 
 interface ITag {
   value: string

@@ -9,8 +9,8 @@ import {
   JetBrains_Mono,
 } from "next/font/google"
 
-import BackButton from "components/BackButton"
-import classNames from "utils/classNames"
+import BackButton from "@/components/BackButton"
+import classNames from "@/utils/classNames"
 
 import "../styles/main.css"
 

@@ -5,7 +5,7 @@ import { motion, AnimatePresence } from "motion/react"
 import Image from "next/image"
 
 import PeerlistMelodyPopup from "assets/peerlist-melody-popup.png"
-import classNames from "utils/classNames"
+import classNames from "@/utils/classNames"
 
 const MelodyPopup: React.FC = () => {
   const elementRef = React.useRef<HTMLDivElement>(null)

@@ -2,8 +2,8 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import JellyTags from "components/JellyTags"
-import generateMetadata from "utils/seo"
+import JellyTags from "@/components/JellyTags"
+import generateMetadata from "@/utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/jelly-tags/",

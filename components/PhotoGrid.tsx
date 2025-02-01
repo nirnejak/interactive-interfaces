@@ -1,6 +1,6 @@
 import * as React from "react"
 
-import classNames from "utils/classNames"
+import classNames from "@/utils/classNames"
 
 const cardClasses =
   "h-full w-full bg-cover bg-center bg-no-repeat rounded-lg overflow-hidden transition-all hover:scale-[1.01]"

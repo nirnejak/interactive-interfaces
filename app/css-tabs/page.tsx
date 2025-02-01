@@ -2,8 +2,8 @@ import * as React from "react"
 
 import { type Metadata } from "next"
 
-import CSSTabs from "components/CSSTabs"
-import generateMetadata from "utils/seo"
+import CSSTabs from "@/components/CSSTabs"
+import generateMetadata from "@/utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/css-tabs/",

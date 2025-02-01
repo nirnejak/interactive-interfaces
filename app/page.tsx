@@ -5,7 +5,7 @@ import { type Metadata } from "next"
 import { ArrowRight } from "akar-icons"
 import Link from "next/link"
 
-import generateMetadata from "utils/seo"
+import generateMetadata from "@/utils/seo"
 
 export const metadata: Metadata = generateMetadata({
   path: "/",
