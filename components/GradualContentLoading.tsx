@@ -9,8 +9,8 @@ const GradualContentLoading: React.FC = () => {
       <div className="flex min-h-64 w-96 flex-col gap-3.5 rounded-lg bg-black p-8">
         {COPY.map((copy, index) => (
           <motion.p
-            initial={{ opacity: 0, translateY: 10 }}
-            animate={{ opacity: 1, translateY: 0 }}
+            initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
+            animate={{ opacity: 1, translateY: 0, filter: "blur(0)" }}
             transition={{
               delay: 0.12 * index,
               type: "spring",
