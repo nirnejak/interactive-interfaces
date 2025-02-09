@@ -3,9 +3,9 @@ import * as React from "react"
 import { type Metadata } from "next"
 
 import ExitAnimation from "@/components/ExitAnimation"
-import generateMetadata from "@/utils/seo"
+import getMetadata from "@/utils/seo"
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = getMetadata({
   path: "/exit-animation/",
   title: "Exit Animation | Interactive Interfaces",
   description: "Exit and Entry animation for elements",

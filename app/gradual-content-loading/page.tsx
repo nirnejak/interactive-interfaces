@@ -3,9 +3,9 @@ import * as React from "react"
 import { type Metadata } from "next"
 
 import GradualContentLoading from "@/components/GradualContentLoading"
-import generateMetadata from "@/utils/seo"
+import getMetadata from "@/utils/seo"
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = getMetadata({
   path: "/gradual-content-loading/",
   title: "Gradual Content Loading | Interactive Interfaces",
   description: "Gradual Content Loading",

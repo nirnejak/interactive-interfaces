@@ -5,9 +5,9 @@ import { type Metadata } from "next"
 import { ArrowRight } from "akar-icons"
 import Link from "next/link"
 
-import generateMetadata from "@/utils/seo"
+import getMetadata from "@/utils/seo"
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = getMetadata({
   path: "/",
   title: "Interactive Interfaces",
   description:

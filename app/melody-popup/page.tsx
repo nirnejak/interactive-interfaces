@@ -3,9 +3,9 @@ import * as React from "react"
 import { type Metadata } from "next"
 
 import MelodyPopup from "@/components/MelodyPopup"
-import generateMetadata from "@/utils/seo"
+import getMetadata from "@/utils/seo"
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = getMetadata({
   path: "/melody-popup/",
   title: "Melody Popup | Interactive Interfaces",
   description: "Melody Popup animation",

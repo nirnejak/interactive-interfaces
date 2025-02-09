@@ -3,9 +3,9 @@ import * as React from "react"
 import { type Metadata } from "next"
 
 import UpvoteButton from "@/components/UpvoteButton"
-import generateMetadata from "@/utils/seo"
+import getMetadata from "@/utils/seo"
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = getMetadata({
   path: "/upvote-button/",
   title: "Upvote Button | Interactive Interfaces",
   description: "Upvote Button animations",

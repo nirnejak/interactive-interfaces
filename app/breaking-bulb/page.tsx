@@ -3,9 +3,9 @@ import * as React from "react"
 import { type Metadata } from "next"
 
 import Bulb from "@/components/Bulb"
-import generateMetadata from "@/utils/seo"
+import getMetadata from "@/utils/seo"
 
-export const metadata: Metadata = generateMetadata({
+export const metadata: Metadata = getMetadata({
   path: "/breaking-bulb/",
   title: "Breaking Bulb | Interactive Interfaces",
   description: "Tabs with active state indicator that moves",
