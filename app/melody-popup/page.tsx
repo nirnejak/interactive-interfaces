@@ -3,7 +3,7 @@ import * as React from "react"
 import { type Metadata } from "next"
 
 import MelodyPopup from "@/components/MelodyPopup"
-import getMetadata from "@/utils/seo"
+import getMetadata from "@/utils/metadata"
 
 export const metadata: Metadata = getMetadata({
   path: "/melody-popup/",
