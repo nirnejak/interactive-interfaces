@@ -59,7 +59,9 @@
     "prettier",
     "precommit",
     "framer motion",
-    "motion"
+    "motion",
+    "tailwind",
+    "tailwindcss"
   ],
   "license": "MIT",
   "repository": {
