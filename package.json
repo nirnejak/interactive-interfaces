@@ -57,7 +57,9 @@
     "typescript",
     "eslint",
     "prettier",
-    "precommit"
+    "precommit",
+    "framer motion",
+    "motion"
   ],
   "license": "MIT",
   "repository": {
