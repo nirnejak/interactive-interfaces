@@ -25,7 +25,6 @@ const AirbnbCards: React.FC = () => {
             transition={{
               type: "spring",
               duration: 0.2,
-              easing: "ease-out",
               delay: 0.05 * index,
               stiffness: 65,
               damping: 12,
