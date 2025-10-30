@@ -17,20 +17,20 @@
     "dotenv": "^17.2.3",
     "inspx": "^0.0.1-alpha.6",
     "motion": "^12.23.24",
-    "next": "^15.5.6",
+    "next": "^16.0.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "sharp": "^0.34.4",
     "use-sound": "^5.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.37.0",
-    "@tailwindcss/postcss": "^4.1.14",
-    "@types/node": "^24.8.1",
+    "@eslint/js": "^9.38.0",
+    "@tailwindcss/postcss": "^4.1.16",
+    "@types/node": "^24.9.2",
     "@types/react": "^19.2.2",
-    "eslint": "^9.37.0",
+    "eslint": "^9.38.0",
     "eslint-config-love": "^133.0.0",
-    "eslint-config-next": "^15.5.6",
+    "eslint-config-next": "^16.0.1",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-n": "^17.23.1",
@@ -38,12 +38,12 @@
     "eslint-plugin-tailwindcss": "^3.18.2",
     "globals": "^16.4.0",
     "husky": "^9.1.7",
-    "lint-staged": "^16.2.4",
+    "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.7.0",
-    "tailwindcss": "^4.1.14",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "tailwindcss": "^4.1.16",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.1"
+    "typescript-eslint": "^8.46.2"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint"
