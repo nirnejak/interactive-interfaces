@@ -28,10 +28,10 @@ const AnimateHeight: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="grid h-64 w-96 place-content-center rounded-lg bg-black p-4 text-sm transition-all ease-out">
+      <div className="grid h-64 w-96 place-content-center rounded-lg p-4 text-sm transition-all ease-out">
         <motion.div
           animate={{ height }}
-          className="rounded-md bg-zinc-900 text-sm text-zinc-50"
+          className="rounded-md bg-zinc-200 text-sm text-zinc-900"
         >
           <div ref={elementRef} className="p-6 font-serif">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias
@@ -56,7 +56,7 @@ const AnimateHeight: React.FC = () => {
       </div>
 
       <button
-        className="rounded-sm bg-zinc-300 px-3 py-1.5 text-sm text-zinc-900"
+        className="rounded-sm bg-zinc-900 px-3 py-1.5 text-sm text-zinc-50"
         onClick={() => {
           setShowExtraContent(!showExtraContent)
         }}
