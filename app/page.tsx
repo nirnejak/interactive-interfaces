@@ -31,10 +31,10 @@ const Home: React.FC = () => {
   return (
     <main className="grid min-h-screen place-content-center">
       <div className="max-w-[820px] px-5 md:px-0">
-        <h1 className="mb-4 font-serif text-3xl text-zinc-100">
+        <h1 className="mb-4 font-serif text-3xl text-zinc-900">
           Interactive Interfaces
         </h1>
-        <p className="mb-24 max-w-[380px] font-serif text-base text-zinc-300">
+        <p className="mb-24 max-w-[380px] font-serif text-base text-zinc-600">
           A collection of interactive interfaces crafted with React, TypeScript,
           TailwindCSS, Framer Motion, and a tiny bit of CSS animations.
         </p>
@@ -43,7 +43,7 @@ const Home: React.FC = () => {
             <Link
               key={i}
               href={component.link}
-              className="flex items-center gap-2 py-1.5 text-zinc-200 transition-all hover:scale-110"
+              className="flex items-center gap-2 py-1.5 text-zinc-900 transition-transform hover:scale-110 tracking-tighter"
             >
               <span>{component.title}</span>
               <div className="flex-1 border-t border-dashed border-zinc-700" />
