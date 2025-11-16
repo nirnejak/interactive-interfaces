@@ -22,10 +22,10 @@ const DynamicButton: React.FC = () => {
   >("idle")
 
   return (
-    <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="grid h-64 w-96 place-content-center rounded-lg bg-zinc-800 p-4 text-center text-sm transition-all ease-out">
+    <div className="flex flex-col items-center justify-center gap-6">
+      <div className="grid h-64 w-96 place-content-center rounded-lg p-4 text-center text-sm transition-all ease-out">
         <button
-          className="h-10 w-28 overflow-hidden rounded-sm bg-zinc-100 px-3 py-1.5 text-sm text-zinc-900"
+          className="h-10 w-28 overflow-hidden rounded-sm bg-zinc-900 px-3 py-1.5 text-sm text-zinc-50"
           disabled={buttonState === "loading"}
           onClick={() => {
             if (buttonState === "success") return
