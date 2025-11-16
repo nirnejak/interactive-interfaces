@@ -8,14 +8,14 @@ const ExitAnimation: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="grid h-64 w-96 place-content-center rounded-lg bg-black p-4 text-center text-sm transition-all ease-out">
+      <div className="grid h-64 w-96 place-content-center rounded-lg p-4 text-center text-sm transition-all ease-out">
         <AnimatePresence>
           {isActive && (
             <motion.div
               initial={{ opacity: 0, translateY: 10 }}
               animate={{ opacity: 1, translateY: 0 }}
               exit={{ opacity: 0, translateY: -10 }}
-              className="rounded-full bg-zinc-900 px-7 py-3 text-sm text-zinc-50"
+              className="rounded-full bg-zinc-200 px-7 py-3 text-sm text-zinc-900"
             >
               Element
             </motion.div>
@@ -23,7 +23,7 @@ const ExitAnimation: React.FC = () => {
         </AnimatePresence>
       </div>
       <button
-        className="rounded-sm bg-zinc-100 px-3 py-1.5 text-sm text-zinc-900"
+        className="rounded-sm text-zinc-50 px-3 py-1.5 text-sm bg-zinc-900"
         onClick={() => {
           setIsActive(!isActive)
         }}
