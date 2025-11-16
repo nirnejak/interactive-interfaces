@@ -17,20 +17,20 @@
     "dotenv": "^17.2.3",
     "inspx": "^0.0.1-alpha.6",
     "motion": "^12.23.24",
-    "next": "^16.0.1",
+    "next": "^16.0.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
-    "sharp": "^0.34.4",
+    "sharp": "^0.34.5",
     "use-sound": "^5.0.0"
   },
   "devDependencies": {
-    "@eslint/js": "^9.39.0",
-    "@tailwindcss/postcss": "^4.1.16",
-    "@types/node": "^24.9.2",
-    "@types/react": "^19.2.2",
-    "eslint": "^9.39.0",
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/postcss": "^4.1.17",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.5",
+    "eslint": "^9.39.1",
     "eslint-config-love": "^133.0.0",
-    "eslint-config-next": "^16.0.1",
+    "eslint-config-next": "^16.0.3",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-jsx-a11y": "^6.10.2",
     "eslint-plugin-n": "^17.23.1",
@@ -41,9 +41,9 @@
     "lint-staged": "^16.2.6",
     "prettier": "^3.6.2",
     "prettier-plugin-tailwindcss": "^0.7.1",
-    "tailwindcss": "^4.1.16",
+    "tailwindcss": "^4.1.17",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.46.2"
+    "typescript-eslint": "^8.46.4"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": "eslint"
