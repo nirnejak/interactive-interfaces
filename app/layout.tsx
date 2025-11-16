@@ -64,15 +64,15 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         ></script>
       </head>
 
-      <body className="overflow-x-hidden bg-zinc-900 font-sans">
+      <body className="overflow-x-hidden bg-zinc-50 font-sans">
         {children}
-        <div className="fixed bottom-4 flex w-full text-center font-serif text-sm text-zinc-400">
+        <div className="fixed bottom-4 flex w-full text-center font-serif text-sm text-zinc-900">
           <p className="mx-auto">
             Crafted by{" "}
             <a
               target="_blank"
               href="https://nirnejak.com/"
-              className="text-zinc-300 transition-colors hover:text-zinc-100"
+              className="text-zinc-600 transition-colors"
             >
               Jitendra Nirnejak
             </a>
