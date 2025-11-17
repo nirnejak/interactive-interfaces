@@ -13,7 +13,7 @@ export const metadata: Metadata = getMetadata({
 
 const ExitAnimationPage: React.FC = () => {
   return (
-    <main className="grid h-screen place-content-center">
+    <main className="grid h-full place-content-center">
       <ExitAnimation />
     </main>
   )
