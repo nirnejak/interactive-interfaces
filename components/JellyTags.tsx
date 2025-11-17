@@ -101,9 +101,9 @@ const JellyTags: React.FC = () => {
                     <path
                       d="M5.83331 10.4166L8.33331 12.9166L14.1666 7.08331"
                       stroke="#F66A0A"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
+                      strokeWidth="1.5"
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
                     />
                   </svg>
                 </div>
