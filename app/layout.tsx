@@ -1,18 +1,16 @@
 import * as React from "react"
 
 import type { Viewport } from "next"
-
+import Link from "next/link"
 import {
   Inter,
   IBM_Plex_Serif,
   Instrument_Serif,
   JetBrains_Mono,
 } from "next/font/google"
+import { ArrowUpRight } from "akar-icons"
 
 import classNames from "@/utils/classNames"
-
-import { ArrowRight } from "akar-icons"
-import Link from "next/link"
 
 import "../styles/main.css"
 
@@ -108,9 +106,9 @@ const RootLayout: React.FC<Props> = ({ children }) => {
               >
                 <span>{component.title}</span>
                 <div className="flex-1 border-t border-dashed border-zinc-300" />
-                <ArrowRight
+                <ArrowUpRight
                   size={16}
-                  className="group-hover:rotate-0 -rotate-45 transition-transform"
+                  className="group-hover:rotate-45 transition-transform"
                 />
               </Link>
             ))}
