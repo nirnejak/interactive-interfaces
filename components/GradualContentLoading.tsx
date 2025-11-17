@@ -17,7 +17,7 @@ const GradualContentLoading: React.FC = () => {
               bounce: 0,
             }}
             key={copy}
-            className="font-serif text-base font-normal"
+            className="font-serif text-base font-normal tracking-tight"
           >
             {copy}
           </motion.p>
