@@ -56,61 +56,59 @@ const JellyTags: React.FC = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="h-full w-[calc(100vw-40px)] rounded-lg bg-white p-6 text-sm md:h-[560px] md:w-[984px] md:p-4 md:pl-[95px] md:pt-[110px]">
-        <h1 className="mb-6 font-instrument-serif text-[40px] leading-[48px] text-gray-900">
-          What are your favorite cuisines?
-        </h1>
-        <div className="flex max-w-[630px] flex-wrap items-start justify-start gap-2">
-          {tags.map((tag, index) => (
-            <motion.button
-              layout
-              key={index}
-              initial={false}
-              transition={{
-                type: "spring",
-                mass: 1,
-                stiffness: 600.4,
-                damping: 15,
-              }}
-              className={classNames(
-                tag.isSelected
-                  ? "bg-[#F66A0A] text-[#F6F8FA]"
-                  : "hover:bg-[#F66A0A26] text-gray-700",
-                "flex items-center gap-1 rounded-full border border-[#F66A0A] px-3 py-2 text-sm"
-              )}
-              onClick={() => {
-                toggleTag(index)
-              }}
-            >
-              <p className="max-w-min">{tag.value}</p>
+    <div className="p-6 text-sm  md:p-4">
+      <h1 className="mb-6 font-instrument-serif text-[40px] leading-[48px] text-gray-900">
+        What are your favorite cuisines?
+      </h1>
+      <div className="flex max-w-[630px] flex-wrap items-start justify-start gap-2">
+        {tags.map((tag, index) => (
+          <motion.button
+            layout
+            key={index}
+            initial={false}
+            transition={{
+              type: "spring",
+              mass: 1,
+              stiffness: 600.4,
+              damping: 15,
+            }}
+            className={classNames(
+              tag.isSelected
+                ? "bg-[#F66A0A] text-[#F6F8FA]"
+                : "hover:bg-[#F66A0A26] text-gray-700",
+              "flex items-center gap-1 rounded-full border border-[#F66A0A] px-3 py-2 text-sm"
+            )}
+            onClick={() => {
+              toggleTag(index)
+            }}
+          >
+            <p className="max-w-min">{tag.value}</p>
 
-              {tag.isSelected && (
-                <div className="w-[20px]">
-                  <svg
-                    width="20"
-                    height="20"
-                    viewBox="0 0 20 20"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10 18.3334C14.6025 18.3334 18.3334 14.6025 18.3334 10C18.3334 5.39752 14.6025 1.66669 10 1.66669C5.39752 1.66669 1.66669 5.39752 1.66669 10C1.66669 14.6025 5.39752 18.3334 10 18.3334Z"
-                      fill="#F6F8FA"
-                    />
-                    <path
-                      d="M5.83331 10.4166L8.33331 12.9166L14.1666 7.08331"
-                      stroke="#F66A0A"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </div>
-              )}
-            </motion.button>
-          ))}
-        </div>
+            {tag.isSelected && (
+              <div className="w-[20px]">
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M10 18.3334C14.6025 18.3334 18.3334 14.6025 18.3334 10C18.3334 5.39752 14.6025 1.66669 10 1.66669C5.39752 1.66669 1.66669 5.39752 1.66669 10C1.66669 14.6025 5.39752 18.3334 10 18.3334Z"
+                    fill="#F6F8FA"
+                  />
+                  <path
+                    d="M5.83331 10.4166L8.33331 12.9166L14.1666 7.08331"
+                    stroke="#F66A0A"
+                    strokeWidth="1.5"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
+              </div>
+            )}
+          </motion.button>
+        ))}
       </div>
     </div>
   )
