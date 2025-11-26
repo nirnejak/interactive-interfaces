@@ -45,6 +45,7 @@ const components = [
   { title: "Jelly Tags", link: "/jelly-tags/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
   { title: "Airbnb Cards", link: "/airbnb-cards/" },
+  { title: "Poker Widget", link: "/poker-widget/" },
   { title: "Breaking Bulb", link: "/breaking-bulb/" },
   { title: "Upvote Button", link: "/upvote-button/" },
   { title: "Exit Animation", link: "/exit-animation/" },
@@ -77,8 +78,8 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         ></script>
       </head>
 
-      <body className="overflow-x-hidden font-sans bg-zinc-100 flex">
-        <aside className="w-3/12 flex flex-col px-8 pt-12">
+      <body className="overflow-x-hidden font-sans bg-zinc-100 flex flex-col md:flex-row">
+        <aside className="md:w-3/12 flex flex-col px-8 pt-12">
           <h1 className="mb-2 font-serif text-3xl text-zinc-900 tracking-tighter">
             Interactive Interfaces
           </h1>
@@ -114,7 +115,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
             ))}
           </div>
         </aside>
-        <main className="w-9/12 p-4 min-h-dvh flex">
+        <main className="md:w-9/12 p-4 min-h-dvh flex">
           <div className="bg-white rounded-xl w-full">{children}</div>
         </main>
       </body>
