@@ -78,12 +78,30 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         ></script>
       </head>
 
-      <body className="overflow-x-hidden font-sans bg-zinc-100 flex flex-col md:flex-row">
-        <aside className="md:w-3/12 flex flex-col px-8 pt-12">
-          <h1 className="mb-2 font-serif text-3xl text-zinc-900 tracking-tighter">
+      <body
+        className="
+          flex flex-col overflow-x-hidden bg-zinc-100 font-sans
+          md:flex-row
+        "
+      >
+        <aside
+          className="
+            flex flex-col px-8 pt-12
+            md:w-3/12
+          "
+        >
+          <h1
+            className="
+              mb-2 font-serif text-3xl tracking-tighter text-zinc-900
+            "
+          >
             Interactive Interfaces
           </h1>
-          <p className="mb-6 max-w-[260px] font-serif text-base text-zinc-600 tracking-tight">
+          <p
+            className="
+              mb-6 max-w-65 font-serif text-base tracking-tight text-zinc-600
+            "
+          >
             A collection of interactive interfaces crafted with React,
             TypeScript, TailwindCSS, Framer Motion, and a tiny bit of CSS
             animations.
@@ -103,20 +121,32 @@ const RootLayout: React.FC<Props> = ({ children }) => {
               <Link
                 key={i}
                 href={component.link}
-                className="group flex items-center gap-2 py-1.5 text-zinc-500 hover:text-zinc-900 transition-colors tracking-tighter"
+                className="
+                  group flex items-center gap-2 py-1.5 tracking-tighter
+                  text-zinc-500 transition-colors
+                  hover:text-zinc-900
+                "
               >
                 <span>{component.title}</span>
                 <div className="flex-1 border-t border-dashed border-zinc-300" />
                 <ArrowUpRight
                   size={16}
-                  className="group-hover:rotate-45 transition-transform"
+                  className="
+                    transition-transform
+                    group-hover:rotate-45
+                  "
                 />
               </Link>
             ))}
           </div>
         </aside>
-        <main className="md:w-9/12 p-4 min-h-dvh flex">
-          <div className="bg-white rounded-xl w-full">{children}</div>
+        <main
+          className="
+            flex min-h-dvh p-4
+            md:w-9/12
+          "
+        >
+          <div className="w-full rounded-xl bg-white">{children}</div>
         </main>
       </body>
     </html>

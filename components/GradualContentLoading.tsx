@@ -6,7 +6,11 @@ import { motion } from "motion/react"
 const GradualContentLoading: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-zinc-900">
-      <div className="flex min-h-64 w-96 flex-col gap-3.5 rounded-lg bg-zinc-200 p-8">
+      <div
+        className="
+          flex min-h-64 w-96 flex-col gap-3.5 rounded-lg bg-zinc-200 p-8
+        "
+      >
         {COPY.map((copy, index) => (
           <motion.p
             initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}

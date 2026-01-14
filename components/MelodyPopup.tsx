@@ -135,7 +135,7 @@ const MelodyPopup: React.FC = () => {
               className="flex w-full items-center justify-between"
             >
               <div>
-                <p className="mb-1 text-lg font-semibold leading-6 text-black">
+                <p className="mb-1 text-lg/6 font-semibold text-black">
                   Tore Up
                 </p>
                 <p className="text-base leading-[22px] text-gray-700">
@@ -151,7 +151,10 @@ const MelodyPopup: React.FC = () => {
                   stiffness: 400,
                   damping: 25,
                 }}
-                className="flex items-center gap-1 rounded-full bg-gray-900 px-3.5 py-2 text-white"
+                className="
+                  flex items-center gap-1 rounded-full bg-gray-900 px-3.5 py-2
+                  text-white
+                "
                 onClick={() => {
                   setIsPlaying(!isPlaying)
                 }}
@@ -185,7 +188,7 @@ const MelodyPopup: React.FC = () => {
               className="flex w-full items-center justify-between gap-[107px]"
             >
               <div>
-                <p className="mb-1 text-lg font-semibold leading-6 text-black">
+                <p className="mb-1 text-lg/6 font-semibold text-black">
                   Tore Up
                 </p>
                 <p className="text-base leading-[22px] text-gray-700">
@@ -201,7 +204,10 @@ const MelodyPopup: React.FC = () => {
                   damping: 25,
                 }}
                 // whileHover={}
-                className="flex items-center gap-1 rounded-full bg-gray-900 px-3.5 py-2 text-white"
+                className="
+                  flex items-center gap-1 rounded-full bg-gray-900 px-3.5 py-2
+                  text-white
+                "
                 onClick={() => {
                   setIsPlaying(!isPlaying)
                 }}

@@ -3,7 +3,7 @@ import * as React from "react"
 
 import useSound from "use-sound"
 
-let timer: any = null
+let timer: NodeJS.Timeout | null = null
 
 const Bulb: React.FC = () => {
   const [isSwitchOn, setIsSwitchOn] = React.useState(false)
@@ -39,20 +39,20 @@ const Bulb: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="h-80 w-[460px] rounded-lg bg-zinc-800">
+      <div className="h-80 w-115 rounded-lg bg-zinc-800">
         <div className="origin-top animate-swing">
           <div className="relative left-1/2 h-40 w-1 -translate-x-1/2 bg-black" />
-          <div className="relative left-1/2 h-[20px] w-4 -translate-x-1/2 bg-zinc-500">
+          <div className="relative left-1/2 h-5 w-4 -translate-x-1/2 bg-zinc-500">
             <div
-              className="relative right-px h-[2px] w-[18px] bg-zinc-400"
+              className="relative right-px h-0.5 w-4.5 bg-zinc-400"
               style={{ top: 4 }}
             />
             <div
-              className="relative right-px h-[2px] w-[18px] bg-zinc-400"
+              className="relative right-px h-0.5 w-4.5 bg-zinc-400"
               style={{ top: 7 }}
             />
             <div
-              className="relative right-px h-[2px] w-[18px] bg-zinc-400"
+              className="relative right-px h-0.5 w-4.5 bg-zinc-400"
               style={{ top: 10 }}
             />
           </div>
@@ -64,7 +64,10 @@ const Bulb: React.FC = () => {
               role={"checkbox"}
               aria-checked="false"
               aria-labelledby="Bulb"
-              className="relative bottom-[2px] left-1/2 z-[-1] size-[40px] -translate-x-1/2 cursor-pointer rounded-full bg-zinc-700"
+              className="
+                relative bottom-[2px] left-1/2 z-[-1] size-[40px]
+                -translate-x-1/2 cursor-pointer rounded-full bg-zinc-700
+              "
               style={
                 isSwitchOn
                   ? {
@@ -74,7 +77,7 @@ const Bulb: React.FC = () => {
                   : {}
               }
               onKeyUp={(e) => {
-                e.key === "Enter" && toggleBulb()
+                if (e.key === "Enter") toggleBulb()
               }}
               onClick={() => {
                 toggleBulb()

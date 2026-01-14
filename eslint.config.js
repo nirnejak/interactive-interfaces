@@ -22,10 +22,14 @@ const eslintConfig = defineConfig([
   },
   {
     plugins: { "better-tailwindcss": betterTailwindcss },
-    rules: betterTailwindcss.configs["recommended-error"].rules,
+    rules: {
+      ...betterTailwindcss.configs["recommended-error"].rules,
+      "better-tailwindcss/enforce-consistent-line-wrapping": "off",
+    },
     settings: {
       "better-tailwindcss": {
         entryPoint: "app/globals.css",
+        ignoredClasses: ["css-tabs"],
       },
     },
   },

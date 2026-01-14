@@ -28,7 +28,12 @@ const AnimateHeight: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="grid h-64 w-96 place-content-center rounded-lg p-4 text-sm transition-all ease-out">
+      <div
+        className="
+          grid h-64 w-96 place-content-center rounded-lg p-4 text-sm
+          transition-all ease-out
+        "
+      >
         <motion.div
           animate={{ height }}
           className="rounded-md bg-zinc-200 text-sm text-zinc-900"
