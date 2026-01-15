@@ -45,7 +45,7 @@ const components = [
   { title: "Jelly Tags", link: "/jelly-tags/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
   { title: "Airbnb Cards", link: "/airbnb-cards/" },
-  // { title: "Poker Widget", link: "/poker-widget/" },
+  { title: "Poker Widget", link: "/poker-widget/" },
   { title: "Breaking Bulb", link: "/breaking-bulb/" },
   { title: "Upvote Button", link: "/upvote-button/" },
   { title: "Exit Animation", link: "/exit-animation/" },
