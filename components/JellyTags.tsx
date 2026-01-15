@@ -58,17 +58,14 @@ const JellyTags: React.FC = () => {
   return (
     <div
       className="
-        flex max-w-[630px] flex-wrap items-start justify-start gap-2
+        flex max-w-157.5 flex-wrap items-start justify-start gap-2
       "
     >
-      <h1
-        className="
-          mb-6 font-instrument-serif text-[40px] leading-[48px] text-gray-900
-        "
-      >
+      {/* eslint-disable-next-line better-tailwindcss/no-unknown-classes */}
+      <h1 className="font-instrument-serif mb-6 text-[40px]/12 text-gray-900">
         What are your favorite cuisines?
       </h1>
-      <div className="flex max-w-[630px] flex-wrap items-start justify-start gap-2">
+      <div className="flex max-w-157.5 flex-wrap items-start justify-start gap-2">
         {tags.map((tag, index) => (
           <motion.button
             layout
@@ -93,7 +90,7 @@ const JellyTags: React.FC = () => {
             <p className="max-w-min">{tag.value}</p>
 
             {tag.isSelected && (
-              <div className="w-[20px]">
+              <div className="w-5">
                 <svg
                   width="20"
                   height="20"
