@@ -4,6 +4,15 @@ const nextConfig = {
   reactCompiler: true,
   trailingSlash: true,
   reactStrictMode: true,
+  async redirects() {
+    return [
+      {
+        source: "/melody-popup/",
+        destination: "/",
+        permanent: true,
+      },
+    ]
+  },
 }
 
 export default nextConfig
