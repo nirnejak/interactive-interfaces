@@ -6,7 +6,42 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://interactive-interfaces.vercel.app/jelly-tags/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/slider-tabs/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://interactive-interfaces.vercel.app/airbnb-cards/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/poker-widget/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/breaking-bulb/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/upvote-button/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/exit-animation/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/dynamic-island/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -21,37 +56,12 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/dynamic-island/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://interactive-interfaces.vercel.app/exit-animation/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://interactive-interfaces.vercel.app/gradual-content-loading/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/jelly-tags/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://interactive-interfaces.vercel.app/melody-popup/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://interactive-interfaces.vercel.app/slider-tabs/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
-    <loc>https://interactive-interfaces.vercel.app/upvote-button/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
