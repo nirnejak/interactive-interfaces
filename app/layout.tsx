@@ -12,7 +12,7 @@ import { ArrowUpRight } from "akar-icons"
 
 import classNames from "@/utils/classNames"
 
-import "../styles/main.css"
+import "./main.css"
 
 export const viewport: Viewport = {
   themeColor: "#000000",
