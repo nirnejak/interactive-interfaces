@@ -6,9 +6,9 @@ import getMetadata from "@/utils/metadata"
 import AskAI from "@/components/AskAI"
 
 export const metadata: Metadata = getMetadata({
-  path: "/upvote-button/",
-  title: "Upvote Button | Interactive Interfaces",
-  description: "Upvote Button animations",
+  path: "/ask-ai/",
+  title: "Ask AI | Interactive Interfaces",
+  description: "Ask AI interactive input form animation",
 })
 
 const UpvoteButtonPage: React.FC = () => {
