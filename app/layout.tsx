@@ -1,12 +1,14 @@
 import * as React from "react"
 
 import type { Viewport } from "next"
+import localFont from "next/font/local"
 import Link from "next/link"
 import {
   Inter,
   IBM_Plex_Serif,
   Instrument_Serif,
   JetBrains_Mono,
+  Geist_Mono,
 } from "next/font/google"
 import { ArrowUpRight } from "akar-icons"
 
@@ -23,6 +25,22 @@ const sansFont = Inter({
   subsets: ["latin"],
 })
 
+const sansSecondaryFont = localFont({
+  variable: "--sans-secondary-font",
+  src: [
+    {
+      path: "../fonts/GeneralSans-Variable.woff2",
+      weight: "300 800",
+      style: "normal",
+    },
+    {
+      path: "../fonts/GeneralSans-VariableItalic.woff2",
+      weight: "300 800",
+      style: "italic",
+    },
+  ],
+})
+
 const serifFont = IBM_Plex_Serif({
   variable: "--serif-font",
   weight: ["400", "500"],
@@ -35,6 +53,12 @@ const monoFont = JetBrains_Mono({
   subsets: ["latin"],
 })
 
+const monoSecondaryFont = Geist_Mono({
+  variable: "--mono-secondary-font",
+  weight: ["400"],
+  subsets: ["latin"],
+})
+
 const instrumentSerifFont = Instrument_Serif({
   variable: "--instrument-serif-font",
   weight: ["400"],
@@ -42,6 +66,7 @@ const instrumentSerifFont = Instrument_Serif({
 })
 
 const components = [
+  { title: "Ask AI", link: "/ask-ai/" },
   { title: "Jelly Tags", link: "/jelly-tags/" },
   { title: "Slider Tabs", link: "/slider-tabs/" },
   { title: "Airbnb Cards", link: "/airbnb-cards/" },
@@ -65,7 +90,9 @@ const RootLayout: React.FC<Props> = ({ children }) => {
       lang="en"
       className={classNames(
         monoFont.variable,
+        monoSecondaryFont.variable,
         sansFont.variable,
+        sansSecondaryFont.variable,
         serifFont.variable,
         instrumentSerifFont.variable
       )}
@@ -90,11 +117,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
             md:w-3/12
           "
         >
-          <h1
-            className="
-              mb-2 font-serif text-3xl tracking-tighter text-zinc-900
-            "
-          >
+          <h1 className="mb-2 font-serif text-3xl tracking-tighter text-zinc-900">
             Interactive Interfaces
           </h1>
           <p
