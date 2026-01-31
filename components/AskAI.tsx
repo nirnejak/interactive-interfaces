@@ -61,7 +61,6 @@ const AskAI: React.FC = () => {
           group relative mb-8 flex flex-col items-center rounded-3xl
           bg-neutral-200 p-2 font-mono-secondary shadow-heavy
           md:mb-12
-          dark:bg-neutral-800 dark:shadow-md
         "
       >
         <div ref={ref} className="w-full">
@@ -69,9 +68,8 @@ const AskAI: React.FC = () => {
             type="text"
             value={title}
             className={classNames(
-              "relative w-full rounded-2xl py-2.5 px-3 text-sm shadow-heavy focus:outline-hidden dark:shadow-md",
-              "bg-neutral-50 text-neutral-700 placeholder:text-neutral-500",
-              "dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-400"
+              "relative w-full rounded-2xl py-2.5 px-3 text-sm shadow-heavy focus:outline-hidden",
+              "bg-neutral-50 text-neutral-700 placeholder:text-neutral-600"
             )}
             placeholder="Ask anything..."
             onChange={(e) => {
@@ -88,9 +86,8 @@ const AskAI: React.FC = () => {
                 exit={{ opacity: 0, y: -5 }}
                 value={description}
                 className={classNames(
-                  "relative w-full flex mt-2 rounded-2xl py-2.5 px-3 text-sm shadow-heavy focus:outline-hidden dark:shadow-md",
-                  "bg-neutral-50 text-neutral-700 placeholder:text-neutral-500",
-                  "dark:bg-neutral-900 dark:text-neutral-300 dark:placeholder:text-neutral-400"
+                  "relative w-full flex mt-2 rounded-2xl py-2.5 px-3 text-sm shadow-heavy focus:outline-hidden",
+                  "bg-neutral-50 text-neutral-700 placeholder:text-neutral-600"
                 )}
                 placeholder="Give additional context..."
                 onChange={(e) => {
@@ -110,9 +107,8 @@ const AskAI: React.FC = () => {
               disabled={isAsking}
               onClick={(e) => e.stopPropagation()}
               className={classNames(
-                "flex items-center gap-1 rounded-xl pl-3 pr-2.5 py-1.5 text-xs shadow-heavy outline-hidden transition-colors dark:shadow-md disabled:opacity-80",
-                "bg-neutral-600 text-neutral-100 hover:bg-neutral-700 focus:bg-neutral-700",
-                "dark:bg-neutral-300 dark:text-neutral-900 dark:hover:bg-neutral-200 dark:focus:bg-neutral-200"
+                "flex items-center gap-1 rounded-xl pl-3 pr-2.5 py-1.5 text-xs shadow-heavy outline-hidden transition-colors disabled:opacity-80",
+                "bg-neutral-700 text-neutral-100 hover:bg-neutral-800 focus:bg-neutral-800"
               )}
             >
               {isAsking ? (
