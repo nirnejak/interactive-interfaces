@@ -113,7 +113,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
               href="https://nirnejak.com/"
               className="text-zinc-900 underline underline-offset-2"
             >
-              Jitendra Nirnejak
+              Jeet
             </a>
           </p>
           <div className="mt-auto mb-5">
