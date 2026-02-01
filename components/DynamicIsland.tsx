@@ -125,12 +125,12 @@ const DynamicIsland: React.FC = () => {
         className="mt-10 text-zinc-200"
         tabsOptions={["Idle", "Ring", "Timer"]}
         activeTab={activeTab}
-        setActiveTab={(nextTab) => {
-          if (nextTab !== 2) {
+        setActiveTab={(currentTab) => {
+          if (currentTab !== 2) {
             setSeconds(initialSeconds)
           }
-          setIsTimerActive(nextTab === 2)
-          setActiveTab(nextTab)
+          setIsTimerActive(currentTab === 2)
+          setActiveTab(currentTab)
         }}
       />
     </div>
