@@ -11,6 +11,11 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/slider-tabs/",
+        destination: "/",
+        permanent: true,
+      },
     ]
   },
 }

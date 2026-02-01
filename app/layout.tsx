@@ -68,7 +68,6 @@ const instrumentSerifFont = Instrument_Serif({
 const components = [
   { title: "Ask AI", link: "/ask-ai/" },
   { title: "Jelly Tags", link: "/jelly-tags/" },
-  { title: "Slider Tabs", link: "/slider-tabs/" },
   { title: "Airbnb Cards", link: "/airbnb-cards/" },
   { title: "Poker Widget", link: "/poker-widget/" },
   { title: "Breaking Bulb", link: "/breaking-bulb/" },
@@ -117,7 +116,11 @@ const RootLayout: React.FC<Props> = ({ children }) => {
             md:w-3/12
           "
         >
-          <h1 className="mb-2 font-serif text-3xl tracking-tighter text-zinc-900">
+          <h1
+            className="
+            mb-2 font-serif text-3xl tracking-tighter text-zinc-900
+          "
+          >
             Interactive Interfaces
           </h1>
           <p
