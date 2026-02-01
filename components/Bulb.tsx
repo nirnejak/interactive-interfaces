@@ -39,7 +39,7 @@ const Bulb: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div className="h-80 w-115 rounded-lg bg-zinc-800">
+      <div className="h-80 w-115 rounded-3xl bg-zinc-800">
         <div className="origin-top animate-swing">
           <div className="relative left-1/2 h-40 w-1 -translate-x-1/2 bg-black" />
           <div className="relative left-1/2 h-5 w-4 -translate-x-1/2 bg-zinc-500">
