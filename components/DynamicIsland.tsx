@@ -109,7 +109,12 @@ const DynamicIsland: React.FC = () => {
     <div className="flex flex-col items-center justify-center gap-3 text-white">
       <motion.div
         animate={tabDimensions}
-        transition={{ type: "spring", duration: 0.4, bounce: 0 }}
+        transition={{
+          duration: 0.3,
+          type: "spring",
+          stiffness: 200,
+          damping: 15,
+        }}
         className={classNames(
           "flex items-center justify-between rounded-full bg-black px-2 text-sm ease-out"
         )}
