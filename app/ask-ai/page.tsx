@@ -11,7 +11,7 @@ export const metadata: Metadata = getMetadata({
   description: "Ask AI interactive input form animation",
 })
 
-const UpvoteButtonPage: React.FC = () => {
+const AskAIPage: React.FC = () => {
   return (
     <main className="grid h-full place-content-center">
       <div className="w-100">
@@ -21,4 +21,4 @@ const UpvoteButtonPage: React.FC = () => {
   )
 }
 
-export default UpvoteButtonPage
+export default AskAIPage
