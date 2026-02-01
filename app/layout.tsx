@@ -72,7 +72,6 @@ const components = [
   { title: "Poker Widget", link: "/poker-widget/" },
   { title: "Breaking Bulb", link: "/breaking-bulb/" },
   { title: "Upvote Button", link: "/upvote-button/" },
-  { title: "Exit Animation", link: "/exit-animation/" },
   { title: "Dynamic Island", link: "/dynamic-island/" },
   { title: "Animate Height", link: "/animate-height/" },
   { title: "Dynamic Button", link: "/dynamic-button/" },
@@ -116,11 +115,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
             md:w-3/12
           "
         >
-          <h1
-            className="
-            mb-2 font-serif text-3xl tracking-tighter text-zinc-900
-          "
-          >
+          <h1 className="mb-2 font-serif text-3xl tracking-tighter text-zinc-900">
             Interactive Interfaces
           </h1>
           <p

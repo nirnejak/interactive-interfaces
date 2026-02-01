@@ -16,6 +16,11 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/exit-animation/",
+        destination: "/",
+        permanent: true,
+      },
     ]
   },
 }
