@@ -73,7 +73,6 @@ const components = [
   { title: "Breaking Bulb", link: "/breaking-bulb/" },
   { title: "Upvote Button", link: "/upvote-button/" },
   { title: "Dynamic Island", link: "/dynamic-island/" },
-  { title: "Animate Height", link: "/animate-height/" },
   { title: "Dynamic Button", link: "/dynamic-button/" },
   { title: "Gradual Content Loading", link: "/gradual-content-loading/" },
 ]

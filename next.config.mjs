@@ -21,6 +21,11 @@ const nextConfig = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/animate-height/",
+        destination: "/",
+        permanent: true,
+      },
     ]
   },
 }
