@@ -23,16 +23,11 @@ const DynamicButton: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6">
-      <div
-        className="
-          grid h-64 w-96 place-content-center rounded-lg p-4 text-center text-sm
-          transition-all ease-out
-        "
-      >
+      <div className="grid h-64 w-96 place-content-center text-center text-sm">
         <button
           className="
-            h-10 w-28 overflow-hidden rounded-sm bg-zinc-900 px-3 py-1.5 text-sm
-            text-zinc-50
+            h-10 w-32 overflow-hidden rounded-full bg-zinc-800 py-1.5 text-sm
+            font-medium tracking-tight text-zinc-50
           "
           disabled={buttonState === "loading"}
           onClick={() => {
