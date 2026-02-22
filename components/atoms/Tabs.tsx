@@ -1,7 +1,7 @@
 "use client"
-import * as React from "react"
 
 import useLinkHighlight from "hooks/useLinkHighlight"
+import type * as React from "react"
 import classNames from "@/utils/classNames"
 
 interface Props {
@@ -26,17 +26,12 @@ const Tabs: React.FC<Props> = ({
     >
       <div
         style={highlightStyles}
-        className="
-          absolute left-0 h-full rounded-lg bg-zinc-200 transition-all
-          duration-300
-        "
+        className="absolute left-0 h-full rounded-lg bg-zinc-200 transition-all duration-300"
       />
       {tabsOptions.map((tab, index) => (
         <button
           key={index}
-          className="
-            relative inline-block px-3.5 py-1.5 text-zinc-900 outline-hidden
-          "
+          className="relative inline-block px-3.5 py-1.5 text-zinc-900 outline-hidden"
           onClick={() => {
             setActiveTab(index)
           }}

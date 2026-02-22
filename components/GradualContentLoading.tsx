@@ -1,16 +1,12 @@
 "use client"
-import * as React from "react"
 
 import { motion } from "motion/react"
+import type * as React from "react"
 
 const GradualContentLoading: React.FC = () => {
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-zinc-900">
-      <div
-        className="
-          flex min-h-64 w-96 flex-col gap-3.5 rounded-lg bg-zinc-200 p-8
-        "
-      >
+      <div className="flex min-h-64 w-96 flex-col gap-3.5 rounded-lg bg-zinc-200 p-8">
         {COPY.map((copy, index) => (
           <motion.p
             initial={{ opacity: 0, translateY: 10, filter: "blur(10px)" }}
@@ -21,7 +17,7 @@ const GradualContentLoading: React.FC = () => {
               bounce: 0,
             }}
             key={copy}
-            className="font-serif text-base font-normal tracking-tight"
+            className="font-normal font-serif text-base tracking-tight"
           >
             {copy}
           </motion.p>

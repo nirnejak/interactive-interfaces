@@ -1,7 +1,7 @@
 "use client"
-import * as React from "react"
 
 import { motion } from "motion/react"
+import * as React from "react"
 
 import classNames from "@/utils/classNames"
 
@@ -56,13 +56,9 @@ const JellyTags: React.FC = () => {
   }
 
   return (
-    <div
-      className="
-        flex max-w-157.5 flex-wrap items-start justify-start gap-2
-      "
-    >
+    <div className="flex max-w-157.5 flex-wrap items-start justify-start gap-2">
       {/* eslint-disable-next-line better-tailwindcss/no-unknown-classes */}
-      <h1 className="font-instrument-serif mb-6 text-[40px]/12 text-gray-900">
+      <h1 className="mb-6 font-instrument-serif text-[40px]/12 text-gray-900">
         What are your favorite cuisines?
       </h1>
       <div className="flex max-w-157.5 flex-wrap items-start justify-start gap-2">
@@ -80,7 +76,7 @@ const JellyTags: React.FC = () => {
             className={classNames(
               tag.isSelected
                 ? "bg-[#F66A0A] text-[#F6F8FA]"
-                : "hover:bg-[#F66A0A26] text-gray-700",
+                : "text-gray-700 hover:bg-[#F66A0A26]",
               "flex items-center gap-1 rounded-full border border-[#F66A0A] px-3 py-2 text-sm"
             )}
             onClick={() => {

@@ -1,12 +1,15 @@
 "use client"
+
+import {
+  AnimatePresence,
+  type AnimationGeneratorType,
+  motion,
+} from "motion/react"
 import * as React from "react"
-
-import { AnimatePresence, motion, AnimationGeneratorType } from "motion/react"
-
-import classNames from "@/utils/classNames"
+import useClickOutside from "@/hooks/useClickOutside"
 
 import useDynamicHeight from "@/hooks/useDynamicHeight"
-import useClickOutside from "@/hooks/useClickOutside"
+import classNames from "@/utils/classNames"
 
 const BASE_TRANSITION = {
   duration: 0.15,
@@ -57,18 +60,14 @@ const AskAI: React.FC = () => {
         animate={{ height: height + 16 }} // added 16px for the padding
         onSubmit={handleFormSubmit}
         onClick={() => setIsFocused(true)}
-        className="
-          group relative mb-8 flex flex-col items-center rounded-3xl
-          bg-neutral-200 p-2 font-mono-secondary shadow-heavy
-          md:mb-12
-        "
+        className="group relative mb-8 flex flex-col items-center rounded-3xl bg-neutral-200 p-2 font-mono-secondary shadow-heavy md:mb-12"
       >
         <div ref={ref} className="w-full">
           <input
             type="text"
             value={title}
             className={classNames(
-              "relative w-full rounded-2xl py-2.5 px-3 text-sm shadow-heavy focus:outline-hidden",
+              "relative w-full rounded-2xl px-3 py-2.5 text-sm shadow-heavy focus:outline-hidden",
               "bg-neutral-50 text-neutral-700 placeholder:text-neutral-600"
             )}
             placeholder="Ask anything..."
@@ -86,7 +85,7 @@ const AskAI: React.FC = () => {
                 exit={{ opacity: 0, y: -5 }}
                 value={description}
                 className={classNames(
-                  "relative w-full flex mt-2 rounded-2xl py-2.5 px-3 text-sm shadow-heavy focus:outline-hidden",
+                  "relative mt-2 flex w-full rounded-2xl px-3 py-2.5 text-sm shadow-heavy focus:outline-hidden",
                   "bg-neutral-50 text-neutral-700 placeholder:text-neutral-600"
                 )}
                 placeholder="Give additional context..."
@@ -97,17 +96,13 @@ const AskAI: React.FC = () => {
               />
             )}
           </AnimatePresence>
-          <div
-            className="
-              absolute right-3.5 bottom-3.5 z-5 flex items-center gap-1.5
-            "
-          >
+          <div className="absolute right-3.5 bottom-3.5 z-5 flex items-center gap-1.5">
             <button
               type="submit"
               disabled={isAsking}
               onClick={(e) => e.stopPropagation()}
               className={classNames(
-                "flex items-center gap-1 rounded-xl pl-3 pr-2.5 py-1.5 text-xs shadow-heavy outline-hidden transition-colors disabled:opacity-80",
+                "flex items-center gap-1 rounded-xl py-1.5 pr-2.5 pl-3 text-xs shadow-heavy outline-hidden transition-colors disabled:opacity-80",
                 "bg-neutral-700 text-neutral-100 hover:bg-neutral-800 focus:bg-neutral-800"
               )}
             >

@@ -1,7 +1,7 @@
 "use client"
-import * as React from "react"
 
-import { motion, AnimatePresence } from "motion/react"
+import { AnimatePresence, motion } from "motion/react"
+import * as React from "react"
 
 import classNames from "@/utils/classNames"
 
@@ -38,30 +38,17 @@ const UpvoteButton: React.FC = () => {
 
   return (
     <div className="flex flex-col items-center justify-center gap-6 text-white">
-      <div
-        className="
-          grid h-64 w-44 scale-200 place-content-center rounded-lg bg-white p-4
-          text-center text-sm transition-all ease-out
-          md:h-64 md:w-96
-        "
-      >
+      <div className="grid h-64 w-44 scale-200 place-content-center rounded-lg bg-white p-4 text-center text-sm transition-all ease-out md:h-64 md:w-96">
         <button
           onClick={() => {
             upvote()
           }}
           className={classNames(
-            "group flex cursor-pointer flex-col items-center justify-center gap-0.5 rounded-lg border size-12 p-6 px-3 py-1 text-center text-[#0D0D0D] focus:outline-hidden hover:border-[#6FCF97] hover:shadow-[0px_0px_0px_4px_#00AA4526]",
+            "group flex size-12 cursor-pointer flex-col items-center justify-center gap-0.5 rounded-lg border p-6 px-3 py-1 text-center text-[#0D0D0D] hover:border-[#6FCF97] hover:shadow-[0px_0px_0px_4px_#00AA4526] focus:outline-hidden",
             hasUpvoted ? "border-[#6FCF97]" : "border-gray-400"
           )}
         >
-          <div
-            className="
-              grid place-content-center rounded-full p-[4.5px] transition-all
-              duration-300
-              group-hover:-translate-y-0.5 group-hover:bg-[#E2F5EA]
-              group-hover:text-[#00AA45]
-            "
-          >
+          <div className="grid place-content-center rounded-full p-[4.5px] transition-all duration-300 group-hover:-translate-y-0.5 group-hover:bg-[#E2F5EA] group-hover:text-[#00AA45]">
             <AnimatePresence mode="popLayout" initial={false}>
               <motion.div
                 transition={{
@@ -84,10 +71,7 @@ const UpvoteButton: React.FC = () => {
                   viewBox="0 0 15 15"
                   fill={hasUpvoted ? "#6FCF97" : "none"}
                   xmlns="http://www.w3.org/2000/svg"
-                  className="
-                    block transition-transform duration-300
-                    group-hover:-translate-y-0.5
-                  "
+                  className="block transition-transform duration-300 group-hover:-translate-y-0.5"
                 >
                   <path
                     d="M13.125 7.65625L7.5 2.03125L1.875 7.65625H5V12.9688H10V7.65625H13.125Z"
@@ -100,11 +84,7 @@ const UpvoteButton: React.FC = () => {
             </AnimatePresence>
           </div>
 
-          <div
-            className="
-              flex gap-px overflow-hidden font-mono text-[10px] leading-[14px]
-            "
-          >
+          <div className="flex gap-px overflow-hidden font-mono text-[10px] leading-[14px]">
             <span className={hasUpvoted ? "text-[#00AA45]" : ""}>{first}</span>
             <AnimatePresence mode="popLayout" initial={false}>
               <motion.span

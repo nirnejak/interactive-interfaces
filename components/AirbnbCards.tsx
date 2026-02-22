@@ -1,7 +1,7 @@
 "use client"
-import * as React from "react"
 
 import { motion } from "motion/react"
+import type * as React from "react"
 
 import classNames from "@/utils/classNames"
 
@@ -17,12 +17,7 @@ const rotationClasses = ["-rotate-3", "rotate-6", "-rotate-3", "rotate-6"]
 const AirbnbCards: React.FC = () => {
   return (
     <div className="relative mx-auto flex flex-col items-center justify-center">
-      <div
-        className="
-          relative h-52 w-[340px]
-          md:w-[500px]
-        "
-      >
+      <div className="relative h-52 w-[340px] md:w-[500px]">
         {images.map((image, index) => (
           <motion.div
             initial={{ scale: 0.02, opacity: 0 }}
@@ -42,7 +37,7 @@ const AirbnbCards: React.FC = () => {
             <div
               className={classNames(
                 rotationClasses[index],
-                "size-32 md:size-52 rounded-3xl bg-white p-2 md:p-3 shadow-xl"
+                "size-32 rounded-3xl bg-white p-2 shadow-xl md:size-52 md:p-3"
               )}
             >
               <div

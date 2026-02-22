@@ -1,22 +1,22 @@
 {
-    "theme_color": "#000000",
-    "background_color": "#000000",
-    "display": "standalone",
-    "scope": "/",
-    "start_url": "/",
-    "name": "Interactive Interfaces",
-    "short_name": "Interactive Interfaces",
-    "description": "A collection of interactive interfaces crafted with React, TailwindCSS, Framer Motion, and TypeScript.",
-    "icons": [
-        {
-            "src": "/icons/icon-256x256.png",
-            "sizes": "256x256",
-            "type": "image/png"
-        },
-        {
-            "src": "/icons/icon-512x512.png",
-            "sizes": "512x512",
-            "type": "image/png"
-        }
-    ]
+  "theme_color": "#000000",
+  "background_color": "#000000",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "name": "Interactive Interfaces",
+  "short_name": "Interactive Interfaces",
+  "description": "A collection of interactive interfaces crafted with React, TailwindCSS, Framer Motion, and TypeScript.",
+  "icons": [
+    {
+      "src": "/icons/icon-256x256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icons/icon-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
 }

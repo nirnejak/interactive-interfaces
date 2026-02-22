@@ -1,8 +1,8 @@
 "use client"
-import * as React from "react"
 
 import { ArrowCycle } from "akar-icons"
 import { AnimatePresence, motion } from "motion/react"
+import * as React from "react"
 
 const buttonCopy = {
   idle: "Submit Form",
@@ -25,10 +25,7 @@ const DynamicButton: React.FC = () => {
     <div className="flex flex-col items-center justify-center gap-6">
       <div className="grid h-64 w-96 place-content-center text-center text-sm">
         <button
-          className="
-            h-10 w-32 overflow-hidden rounded-full bg-zinc-800 py-1.5 text-sm
-            font-medium tracking-tight text-zinc-50
-          "
+          className="h-10 w-32 overflow-hidden rounded-full bg-zinc-800 py-1.5 font-medium text-sm text-zinc-50 tracking-tight"
           disabled={buttonState === "loading"}
           onClick={() => {
             if (buttonState === "success") return

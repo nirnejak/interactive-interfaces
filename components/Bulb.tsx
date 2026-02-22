@@ -64,10 +64,7 @@ const Bulb: React.FC = () => {
               role={"checkbox"}
               aria-checked="false"
               aria-labelledby="Bulb"
-              className="
-                relative bottom-[2px] left-1/2 z-[-1] size-[40px]
-                -translate-x-1/2 cursor-pointer rounded-full bg-zinc-700
-              "
+              className="relative bottom-[2px] left-1/2 z-[-1] size-[40px] -translate-x-1/2 cursor-pointer rounded-full bg-zinc-700"
               style={
                 isSwitchOn
                   ? {
@@ -85,7 +82,7 @@ const Bulb: React.FC = () => {
             >
               {Array(5)
                 .fill(1)
-                .map((item, index) => (
+                .map((_item, index) => (
                   <div
                     key={index}
                     style={{

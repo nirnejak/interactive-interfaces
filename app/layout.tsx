@@ -1,16 +1,16 @@
-import * as React from "react"
+import { ArrowUpRight } from "akar-icons"
 
 import type { Viewport } from "next"
-import localFont from "next/font/local"
-import Link from "next/link"
 import {
-  Inter,
+  Geist_Mono,
   IBM_Plex_Serif,
   Instrument_Serif,
+  Inter,
   JetBrains_Mono,
-  Geist_Mono,
 } from "next/font/google"
-import { ArrowUpRight } from "akar-icons"
+import localFont from "next/font/local"
+import Link from "next/link"
+import type * as React from "react"
 
 import classNames from "@/utils/classNames"
 
@@ -103,26 +103,12 @@ const RootLayout: React.FC<Props> = ({ children }) => {
         ></script>
       </head>
 
-      <body
-        className="
-          flex flex-col overflow-x-hidden bg-zinc-100 font-sans
-          md:flex-row
-        "
-      >
-        <aside
-          className="
-            flex flex-col px-8 pt-12
-            md:w-3/12
-          "
-        >
-          <h1 className="mb-2 font-serif text-3xl tracking-tighter text-zinc-900">
+      <body className="flex flex-col overflow-x-hidden bg-zinc-100 font-sans md:flex-row">
+        <aside className="flex flex-col px-8 pt-12 md:w-3/12">
+          <h1 className="mb-2 font-serif text-3xl text-zinc-900 tracking-tighter">
             Interactive Interfaces
           </h1>
-          <p
-            className="
-              mb-6 max-w-65 font-serif text-base tracking-tight text-zinc-600
-            "
-          >
+          <p className="mb-6 max-w-65 font-serif text-base text-zinc-600 tracking-tight">
             A collection of interactive interfaces crafted with React,
             TypeScript, TailwindCSS, Framer Motion, and a tiny bit of CSS
             animations.
@@ -133,6 +119,7 @@ const RootLayout: React.FC<Props> = ({ children }) => {
               target="_blank"
               href="https://nirnejak.com/"
               className="text-zinc-900 underline underline-offset-2"
+              rel="noopener"
             >
               Jeet
             </a>
@@ -142,31 +129,19 @@ const RootLayout: React.FC<Props> = ({ children }) => {
               <Link
                 key={i}
                 href={component.link}
-                className="
-                  group flex items-center gap-2 py-1.5 tracking-tighter
-                  text-zinc-500 transition-colors
-                  hover:text-zinc-900
-                "
+                className="group flex items-center gap-2 py-1.5 text-zinc-500 tracking-tighter transition-colors hover:text-zinc-900"
               >
                 <span>{component.title}</span>
-                <div className="flex-1 border-t border-dashed border-zinc-300" />
+                <div className="flex-1 border-zinc-300 border-t border-dashed" />
                 <ArrowUpRight
                   size={16}
-                  className="
-                    transition-transform
-                    group-hover:rotate-45
-                  "
+                  className="transition-transform group-hover:rotate-45"
                 />
               </Link>
             ))}
           </div>
         </aside>
-        <main
-          className="
-            flex min-h-dvh p-4
-            md:w-9/12
-          "
-        >
+        <main className="flex min-h-dvh p-4 md:w-9/12">
           <div className="w-full rounded-xl bg-white">{children}</div>
         </main>
       </body>

@@ -1,7 +1,7 @@
 "use client"
-import * as React from "react"
 
 import { AnimatePresence, motion } from "motion/react"
+import * as React from "react"
 
 import classNames from "@/utils/classNames"
 
@@ -204,12 +204,7 @@ const PokerWidget = () => {
       }}
       className="relative size-56 scale-150 rounded-4xl"
     >
-      <div
-        className="
-          z-20 flex size-full flex-col rounded-4xl border-6 border-zinc-50/10
-          p-1
-        "
-      >
+      <div className="z-20 flex size-full flex-col rounded-4xl border-6 border-zinc-50/10 p-1">
         <div className="absolute inset-0">
           <Background />
         </div>
@@ -222,14 +217,14 @@ const PokerWidget = () => {
               style={{ perspective: "1000px", color: card.color }}
             >
               <motion.div
-                className="absolute size-full backface-hidden"
+                className="backface-hidden absolute size-full"
                 animate={{ rotateY: isFlipped ? 180 : 0 }}
                 transition={{ duration: 0.6, type: "spring", stiffness: 80 }}
               >
                 <div
                   key={index}
                   className={classNames(
-                    "flex flex-col items-center justify-center rounded-md h-14 bg-zinc-50 inset-ring-2 inset-ring-zinc-900/15",
+                    "inset-ring-2 inset-ring-zinc-900/15 flex h-14 flex-col items-center justify-center rounded-md bg-zinc-50",
                     index === 0 && "rounded-tl-3xl",
                     index === 4 && "rounded-tr-3xl"
                   )}
@@ -240,7 +235,7 @@ const PokerWidget = () => {
               </motion.div>
 
               <motion.div
-                className="absolute size-full backface-hidden"
+                className="backface-hidden absolute size-full"
                 initial={{ rotateY: 180, opacity: 0 }}
                 animate={{
                   rotateY: isFlipped ? 0 : -180,
@@ -251,7 +246,7 @@ const PokerWidget = () => {
                 <div
                   key={index}
                   className={classNames(
-                    "rounded-md h-14 bg-[#FAA04D] inset-ring-2 inset-ring-zinc-900/15",
+                    "inset-ring-2 inset-ring-zinc-900/15 h-14 rounded-md bg-[#FAA04D]",
                     index === 0 && "rounded-tl-3xl",
                     index === 4 && "rounded-tr-3xl"
                   )}
@@ -262,18 +257,13 @@ const PokerWidget = () => {
         </div>
 
         <div className="mt-1 px-2">
-          <span
-            className="
-              rounded-sm border border-[#FAA04D]/10 bg-[#FAA04D]/10 px-1 py-0.5
-              font-mono text-[8px] tracking-tight text-[#FAA04D] uppercase
-            "
-          >
+          <span className="rounded-sm border border-[#FAA04D]/10 bg-[#FAA04D]/10 px-1 py-0.5 font-mono text-[#FAA04D] text-[8px] uppercase tracking-tight">
             Poker Cheat Sheet
           </span>
         </div>
 
         <div className="mt-auto mb-2 px-2 font-sans">
-          <p className="text-xs font-semibold tracking-tighter text-zinc-50">
+          <p className="font-semibold text-xs text-zinc-50 tracking-tighter">
             <AnimatePresence initial={false} mode="popLayout">
               <motion.span
                 key={currentHand}
@@ -287,7 +277,7 @@ const PokerWidget = () => {
               </motion.span>
             </AnimatePresence>
           </p>
-          <p className="mb-2 text-[10px]/3 tracking-tight text-zinc-300">
+          <p className="mb-2 text-[10px]/3 text-zinc-300 tracking-tight">
             <AnimatePresence initial={false} mode="popLayout">
               <motion.span
                 key={currentHand}
@@ -303,13 +293,7 @@ const PokerWidget = () => {
           </p>
           <button
             onClick={() => handleNextTab()}
-            className="
-              w-full cursor-pointer rounded-lg rounded-b-2xl border-2
-              border-[#00E07C]/10 bg-[#00E07C]/10 py-2 text-xs font-medium
-              tracking-tighter text-[#00E07C] backdrop-blur-xl transition-colors
-              hover:bg-[#00E07C]/20
-              active:hover:bg-[#00E07C]/15
-            "
+            className="w-full cursor-pointer rounded-lg rounded-b-2xl border-2 border-[#00E07C]/10 bg-[#00E07C]/10 py-2 font-medium text-[#00E07C] text-xs tracking-tighter backdrop-blur-xl transition-colors hover:bg-[#00E07C]/20 active:hover:bg-[#00E07C]/15"
           >
             Next hand rank
           </button>

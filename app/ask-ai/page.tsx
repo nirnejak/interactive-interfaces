@@ -1,9 +1,7 @@
-import * as React from "react"
-
-import { type Metadata } from "next"
-
-import getMetadata from "@/utils/metadata"
+import type { Metadata } from "next"
+import type * as React from "react"
 import AskAI from "@/components/AskAI"
+import getMetadata from "@/utils/metadata"
 
 export const metadata: Metadata = getMetadata({
   path: "/ask-ai/",

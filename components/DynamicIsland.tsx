@@ -1,11 +1,10 @@
 "use client"
-import * as React from "react"
 
 import { ArrowCounterClockwise, Bell, Cross, Pause, Play } from "akar-icons"
 import { motion } from "motion/react"
-
-import Tabs from "./atoms/Tabs"
+import * as React from "react"
 import classNames from "@/utils/classNames"
+import Tabs from "./atoms/Tabs"
 
 const initialSeconds = 30
 
@@ -40,12 +39,7 @@ const DynamicIsland: React.FC = () => {
       case 1:
         return (
           <>
-            <span
-              className="
-                flex w-10 items-center justify-center rounded-full bg-red-500
-                py-1.5
-              "
-            >
+            <span className="flex w-10 items-center justify-center rounded-full bg-red-500 py-1.5">
               <Bell size={16} />
             </span>
             <span className="mr-2">Ring</span>
@@ -56,9 +50,7 @@ const DynamicIsland: React.FC = () => {
           <>
             <div className="flex gap-2">
               <button
-                className="
-                  ml-2 rounded-full bg-yellow-600/40 p-3 text-yellow-600
-                "
+                className="ml-2 rounded-full bg-yellow-600/40 p-3 text-yellow-600"
                 onClick={() => {
                   if (seconds === 0 && isTimerActive) {
                     setSeconds(initialSeconds)
@@ -86,7 +78,7 @@ const DynamicIsland: React.FC = () => {
                 <Cross />
               </button>
             </div>
-            <span className="mr-3 text-4xl font-light text-yellow-600">
+            <span className="mr-3 font-light text-4xl text-yellow-600">
               0:{seconds.toString().padStart(2, "0")}
             </span>
           </>

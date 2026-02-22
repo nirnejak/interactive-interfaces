@@ -1,6 +1,5 @@
-import * as React from "react"
-
-import { type Metadata } from "next"
+import type { Metadata } from "next"
+import type * as React from "react"
 
 import UpvoteButton from "@/components/UpvoteButton"
 import getMetadata from "@/utils/metadata"

@@ -1,7 +1,7 @@
 "use client"
-import * as React from "react"
 
 import { motion } from "motion/react"
+import * as React from "react"
 
 const CHART_COLOR = "oklch(50.8% 0.118 165.612)"
 
@@ -32,10 +32,13 @@ const ChartAnimation: React.FC = () => {
   }, [])
 
   return (
-    <div style={{ boxShadow: "10px 50px 70px rgba(0, 0, 0, 0.1)" }} className="flex  flex-col rounded-3xl bg-white p-5 md:mb-12">
-      <div className="mb-12 flex items-center justify-between w-full">
-        <div className="bg-[#EAEAEA] h-3.5 rounded-full w-20" />
-        <div className="bg-[#F4F4F4] h-3.5 rounded-full w-14 ml-auto" />
+    <div
+      style={{ boxShadow: "10px 50px 70px rgba(0, 0, 0, 0.1)" }}
+      className="flex flex-col rounded-3xl bg-white p-5 md:mb-12"
+    >
+      <div className="mb-12 flex w-full items-center justify-between">
+        <div className="h-3.5 w-20 rounded-full bg-[#EAEAEA]" />
+        <div className="ml-auto h-3.5 w-14 rounded-full bg-[#F4F4F4]" />
       </div>
       <svg viewBox="0 0 255 155" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
