@@ -33,10 +33,9 @@ const ChartAnimation: React.FC = () => {
 
   return (
     <div style={{ boxShadow: "10px 50px 70px rgba(0, 0, 0, 0.1)" }} className="flex  flex-col rounded-3xl bg-white p-5 md:mb-12">
-      <div className="mb-12 flex items-center w-full">
-        <div className="bg-[#EAEAEA] h-3.5 rounded-full w-20"></div>
-        <div className="bg-[#F4F4F4] h-3.5 rounded-full w-14 ml-auto"></div>
-        <div></div>
+      <div className="mb-12 flex items-center justify-between w-full">
+        <div className="bg-[#EAEAEA] h-3.5 rounded-full w-20" />
+        <div className="bg-[#F4F4F4] h-3.5 rounded-full w-14 ml-auto" />
       </div>
       <svg viewBox="0 0 255 155" fill="none" xmlns="http://www.w3.org/2000/svg">
         <motion.path
