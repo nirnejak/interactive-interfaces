@@ -74,8 +74,8 @@ const components = [
   { title: "Upvote Button", link: "/upvote-button/" },
   { title: "Dynamic Island", link: "/dynamic-island/" },
   { title: "Dynamic Button", link: "/dynamic-button/" },
-  { title: "Chart Animation", link: "/chart-animation/" },
   { title: "Bar Chart Animation", link: "/bar-chart-animation/" },
+  { title: "Area Chart Animation", link: "/area-chart-animation/" },
   { title: "Gradual Content Loading", link: "/gradual-content-loading/" },
 ]
 
