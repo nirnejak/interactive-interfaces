@@ -6,12 +6,12 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/jelly-tags/</loc>
+    <loc>https://interactive-interfaces.vercel.app/ask-ai/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/slider-tabs/</loc>
+    <loc>https://interactive-interfaces.vercel.app/jelly-tags/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
@@ -36,22 +36,22 @@
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/exit-animation/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.9</priority>
-  </url>
-  <url>
     <loc>https://interactive-interfaces.vercel.app/dynamic-island/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/animate-height/</loc>
+    <loc>https://interactive-interfaces.vercel.app/dynamic-button/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://interactive-interfaces.vercel.app/dynamic-button/</loc>
+    <loc>https://interactive-interfaces.vercel.app/bar-chart-animation/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/area-chart-animation/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
   </url>
