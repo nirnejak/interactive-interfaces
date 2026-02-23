@@ -6,7 +6,7 @@ import getMetadata from "@/utils/metadata"
 export const metadata: Metadata = getMetadata({
   path: "/bar-chart-animation/",
   title: "Bar Chart Animation Component | Interactive Interfaces",
-  description: "Bar Chart Animation Component animation",
+  description: "Animated Bar Chart Component",
 })
 
 const BarChartAnimationPage: React.FC = () => {

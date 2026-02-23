@@ -21,7 +21,7 @@ const CHART_PATHS = [
   "M0 55L63.5 70L127 15L190.5 50L254 75V154.43H0Z",
 ]
 
-const ChartAnimation: React.FC = () => {
+const AreaChartAnimation: React.FC = () => {
   const [pathIndex, setPathIndex] = React.useState(0)
 
   React.useEffect(() => {
@@ -52,4 +52,4 @@ const ChartAnimation: React.FC = () => {
   )
 }
 
-export default ChartAnimation
+export default AreaChartAnimation
