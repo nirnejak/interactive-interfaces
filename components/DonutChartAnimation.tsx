@@ -17,7 +17,13 @@ const RADIUS = 30
 const STROKE_WIDTH = 16
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS
 
-const SEGMENT_COLORS = ["#005461", "#0C7779", "#249E94", "#3BC1A8", "#249E94"]
+const SEGMENT_COLORS = [
+  "oklch(57% 0.19 165)",
+  "oklch(63% 0.19 145)",
+  "oklch(67% 0.15 200)",
+  "oklch(55% 0.20 250)",
+  "oklch(50% 0.20 290)",
+] as const
 
 const DONUT_DATA_SETS = [
   [30, 25, 20, 15, 10],
