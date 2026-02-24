@@ -17,21 +17,7 @@ const RADIUS = 30
 const STROKE_WIDTH = 16
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS
 
-// const SEGMENT_COLORS = [
-//   "oklch(48.8% 0.243 264.376)",
-//   "oklch(49.1% 0.27 292.581)",
-//   "oklch(51.8% 0.253 323.949)",
-//   "oklch(51.4% 0.222 16.935)",
-//   "oklch(50.5% 0.213 27.518)",
-// ]
-
-const SEGMENT_COLORS = [
-  "oklch(50.8% 0.118 165.612)",
-  "oklch(64.6% 0.222 41.116)",
-  "oklch(60% 0.118 184.704)",
-  "oklch(49.6% 0.265 301.924)",
-  "oklch(51.4% 0.222 16.935)",
-]
+const SEGMENT_COLORS = ["#005461", "#0C7779", "#249E94", "#3BC1A8", "#249E94"]
 
 const DONUT_DATA_SETS = [
   [30, 25, 20, 15, 10],
