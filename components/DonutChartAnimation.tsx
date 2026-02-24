@@ -13,8 +13,8 @@ const HOLD_DURATION = 1500
 
 const SIZE = 100
 const CENTER = SIZE / 2
-const RADIUS = 30
-const STROKE_WIDTH = 16
+const RADIUS = 36
+const STROKE_WIDTH = 14
 const CIRCUMFERENCE = 2 * Math.PI * RADIUS
 
 const SEGMENT_COLORS = [
