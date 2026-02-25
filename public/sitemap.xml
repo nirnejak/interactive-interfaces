@@ -61,6 +61,21 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://interactive-interfaces.vercel.app/bubble-chart-animation/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/radar-chart-animation/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://interactive-interfaces.vercel.app/scatter-plot-animation/</loc>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://interactive-interfaces.vercel.app/gradual-content-loading/</loc>
     <changefreq>daily</changefreq>
     <priority>0.9</priority>
