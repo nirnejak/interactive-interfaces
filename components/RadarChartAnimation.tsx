@@ -3,7 +3,8 @@
 import { motion } from "motion/react"
 import * as React from "react"
 
-const CHART_COLOR = "oklch(50.8% 0.118 165.612)"
+const CHART_COLOR_PRIMARY = "oklch(58% 0.16 165)"
+const CHART_COLOR_SECONDARY = "oklch(62% 0.2 350)"
 
 const SPRING_TRANSITION = {
   type: "spring" as const,
@@ -18,12 +19,20 @@ const CENTER = SIZE / 2
 const MAX_RADIUS = 70
 const AXES = 5
 
-const RADAR_DATA_SETS = [
+const RADAR_DATA_SETS_A = [
   [0.9, 0.6, 0.8, 0.5, 0.7],
   [0.5, 0.9, 0.6, 0.8, 0.4],
   [0.7, 0.4, 0.9, 0.7, 0.9],
   [0.6, 0.8, 0.5, 0.9, 0.6],
   [0.8, 0.7, 0.4, 0.6, 0.8],
+]
+
+const RADAR_DATA_SETS_B = [
+  [0.5, 0.8, 0.4, 0.7, 0.6],
+  [0.7, 0.5, 0.8, 0.4, 0.9],
+  [0.4, 0.7, 0.5, 0.9, 0.5],
+  [0.8, 0.4, 0.7, 0.5, 0.8],
+  [0.6, 0.5, 0.9, 0.8, 0.4],
 ]
 
 function dataToPath(data: number[]): string {
@@ -51,12 +60,13 @@ const RadarChartAnimation: React.FC = () => {
 
   React.useEffect(() => {
     const interval = setInterval(() => {
-      setDataIndex((prev) => (prev + 1) % RADAR_DATA_SETS.length)
+      setDataIndex((prev) => (prev + 1) % RADAR_DATA_SETS_A.length)
     }, HOLD_DURATION)
     return () => clearInterval(interval)
   }, [])
 
-  const currentPath = dataToPath(RADAR_DATA_SETS[dataIndex])
+  const primaryPath = dataToPath(RADAR_DATA_SETS_A[dataIndex])
+  const secondaryPath = dataToPath(RADAR_DATA_SETS_B[dataIndex])
 
   return (
     <div
@@ -97,19 +107,28 @@ const RadarChartAnimation: React.FC = () => {
         })}
         <motion.path
           initial={false}
-          animate={{ d: currentPath }}
+          animate={{ d: primaryPath }}
           transition={SPRING_TRANSITION}
-          fill={CHART_COLOR}
+          fill={CHART_COLOR_PRIMARY}
           fillOpacity={0.3}
-          stroke={CHART_COLOR}
+          stroke={CHART_COLOR_PRIMARY}
           strokeWidth={2}
         />
-        {RADAR_DATA_SETS[dataIndex].map((value, i) => {
+        <motion.path
+          initial={false}
+          animate={{ d: secondaryPath }}
+          transition={SPRING_TRANSITION}
+          fill={CHART_COLOR_SECONDARY}
+          fillOpacity={0.2}
+          stroke={CHART_COLOR_SECONDARY}
+          strokeWidth={2}
+        />
+        {RADAR_DATA_SETS_A[dataIndex].map((value, i) => {
           const angle = (i / AXES) * 2 * Math.PI - Math.PI / 2
           const r = value * MAX_RADIUS
           return (
             <motion.circle
-              key={i}
+              key={`a-${i}`}
               initial={false}
               animate={{
                 cx: CENTER + r * Math.cos(angle),
@@ -117,7 +136,24 @@ const RadarChartAnimation: React.FC = () => {
               }}
               transition={SPRING_TRANSITION}
               r={3.5}
-              fill={CHART_COLOR}
+              fill={CHART_COLOR_PRIMARY}
+            />
+          )
+        })}
+        {RADAR_DATA_SETS_B[dataIndex].map((value, i) => {
+          const angle = (i / AXES) * 2 * Math.PI - Math.PI / 2
+          const r = value * MAX_RADIUS
+          return (
+            <motion.circle
+              key={`b-${i}`}
+              initial={false}
+              animate={{
+                cx: CENTER + r * Math.cos(angle),
+                cy: CENTER + r * Math.sin(angle),
+              }}
+              transition={SPRING_TRANSITION}
+              r={3.5}
+              fill={CHART_COLOR_SECONDARY}
             />
           )
         })}
