@@ -76,7 +76,10 @@ const components = [
   { title: "Dynamic Button", link: "/dynamic-button/" },
   { title: "Bar Chart Animation", link: "/bar-chart-animation/" },
   { title: "Area Chart Animation", link: "/area-chart-animation/" },
+  { title: "Scatter Plot Animation", link: "/scatter-plot-animation/" },
+  { title: "Radar Chart Animation", link: "/radar-chart-animation/" },
   { title: "Donut Chart Animation", link: "/donut-chart-animation/" },
+  { title: "Bubble Chart Animation", link: "/bubble-chart-animation/" },
   { title: "Gradual Content Loading", link: "/gradual-content-loading/" },
 ]
 
