@@ -42,7 +42,7 @@ const BarChartAnimation: React.FC = () => {
   return (
     <div
       style={{ boxShadow: "10px 50px 70px rgba(0, 0, 0, 0.1)" }}
-      className="flex flex-col rounded-3xl bg-white p-5 md:mb-12"
+      className="flex flex-col rounded-3xl bg-white p-5"
     >
       <div className="mb-12 flex w-full items-center justify-between">
         <div className="h-3.5 w-20 rounded-full bg-[#EAEAEA]" />
